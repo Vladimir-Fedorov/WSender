@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/style.min.css">
+  <title>Тестовое задание WSender</title>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header-wrapper">
+        <a href="#" class="logo">
+          <span class="logo-symbol">W</span> sender
+        </a>
+        <div class="social js-menu">
+          <div class="social-links">
+            <a href="https://t.me/wsender" target="_blank" class="social-links__link">
+              <svg class="social-links__img social-links__img--telegram">
+                <use xlink:href="sprite.svg#telegram"></use>
+              </svg>
+            </a>
+            <a href="https://dzen.ru/wsender" target="_blank" class="social-links__link">
+              <svg class="social-links__img social-links__img--dzen">
+                <use xlink:href="sprite.svg#dzen"></use>
+              </svg>
+            </a>
+            <a href="https://www.youtube.com/channel/UCehS-eT3C0t02d44TDU_8ig" target="_blank" class="social-links__link">
+              <svg class="social-links__img social-links__img--youtube">
+                <use xlink:href="sprite.svg#youtube"></use>
+              </svg>
+            </a>
+            <a href="https://vk.com/wsender" target="_blank" class="social-links__link">
+              <svg class="social-links__img social-links__img--vkontakte">
+                <use xlink:href="sprite.svg#vkontakte"></use>
+              </svg>
+            </a>
+          </div>
+          <a href="#" class="button disable">личный кабинет</a>
+        </div>
+        <div class="burger js-menu-burger">
+          <span class="burger__item js-menu-burger-item"></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <div class="main-wrapper">
+        <div class="main-content">
+          <span class="logo-symbol logo-symbol--main">W</span>
+          <h1 class="main__title">Вход в личный кабинет</h1>
+          <p class="main__suptitle">Введите номер телефона аккаунта WhatsApp, к которому будет привязан личный кабинет</p>
+
+          <div class="main-form">
+            <div class="main-form__button main-form__button--yandex">
+              <svg class="main-form__icon">
+                <use xlink:href="sprite.svg#yandex"></use>
+              </svg>
+              войти c помощью Yandex
+            </div>
+            <div class="main-form__button main-form__button--google">
+              <svg class="main-form__icon">
+                <use xlink:href="sprite.svg#google"></use>
+              </svg>
+              войти c помощью google
+            </div>
+            <p class="main-form__text">
+              Нажимая кнопку «Войти», я принимаю условия <a href="https://wsender.ru/agreement" target="_blank"  class="main-form__link">Пользовательского соглашения</a> и подтверждаю согласие на обработку моих
+              персональных данных.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="#" class="logo">
+          <span class="logo-symbol">W</span> sender
+        </a>
+        <div class="button js-modal-open">Заказать звонок</div>
+      </div>
+      <div class="footer__line"></div>
+      <div class="footer-info">
+        <span class="footer-info__copy">2023 © Wsender</span>
+        <a href="https://wsender.ru/agreement" target="_blank" class="footer-info__link">Пользовательское соглашение</a>
+        <a href="https://wsender.ru/policy" target="_blank" class="footer-info__link">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal js-modal">
+    <h2 class="modal__title">Заказ звонка</h2>
+    <p class="modal__text">
+      На указанный номер перезвонит первый освободившийся менеджер
+    </p>
+    <form action="#" method="post" class="modal-form">
+      <label class="modal-form__lable" for="number">Номер телефона</label>
+      <input class="modal-form__input js-phone" type="tel" name="number" placeholder="Введите телефон для связи">
+
+      <div class="modal-form-buttons">
+        <button class="modal-form-buttons__button js-button" type="button">заказать</button>
+        <div class="modal-form-buttons__button modal-form-buttons__button--close js-modal-close">отмена</div>
+      </div>
+    </form>
+  </div>
+  <div class="overlay js-overlay"></div>
+
+  <script src="https://unpkg.com/imask"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
